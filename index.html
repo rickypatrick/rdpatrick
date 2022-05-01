@@ -2,13 +2,49 @@
 <html>
  <head>
 <title>Ricky Patrick | Web Designer | Developer | Hartwell, Georgia</title> 
-<link rel="stylesheet" href="/css/style.css">
-      </head>
-      <body>
-<h1>RDPATRICK</h1>
-<h2>706.498.0600</h2>
+<link id="theme" rel="stylesheet" 
+        type="text/css" href="./css/light.css" />
 
-      </body>
+
+
+<script>
+  function toggleTheme() {
+      // Obtains an array of all <link>
+      // elements.
+      // Select your element using indexing.
+      var theme = document.getElementsByTagName('link')[0];
+
+      // Change the value of href attribute 
+      // to change the css sheet.
+      if (theme.getAttribute('href') == './css/light.css') {
+          theme.setAttribute('href', './css/dark.css');
+      } else {
+          theme.setAttribute('href', './css/light.css');
+      }
+  }
+</script>
+</head>
+<body>
+    <div class="main">
+      <img id="blacklogo" src="./images/logoblack.svg">
+      <img id="whitelogo" src="./images/logowhite.svg">
+      <h1>706.498.0600</h1>
+</div>
+<div>
+<button onclick="toggleTheme()">Toggle Day/Night Mode</button>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+</body>
 </html>
 
 
