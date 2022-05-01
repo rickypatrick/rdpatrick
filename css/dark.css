@@ -3,6 +3,11 @@
     src: url(../fonts/roboto-v29-latin-regular.woff2);
 }
 
+* {
+    position:relative;
+    z-index:100;
+}
+
 html, body {
     height:100%;
 }
@@ -10,7 +15,31 @@ html, body {
 body {
     font-family: Roboto, Helvetica, sans-serif;
     text-align:center;
-    background-color:#333;
+    background-color:#000000;
+    margin:0;
+    padding:0;
+    
+    
+}
+#wrapper {
+    height:100%;
+    width:100%;
+    background-color:black;
+    background-image: url("../images/dark-bg.jpg");
+    background-size:cover;
+}
+#wrapper::after {
+    content: '';
+    
+    background: linear-gradient(180deg, rgba(0,0,0,1) 40%, rgba(0,0,0,0.4934567577030813) 100%);
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 80%;
+    z-index:1;
 }
 
 #blacklogo {
@@ -21,6 +50,7 @@ body {
     width:70%;
     margin:auto;
     height:40%;
+    
    
 
 }
@@ -37,11 +67,29 @@ h1 {
 }
 
 button {
+    font-family:inherit;
     margin:30px;
     color:black;
     background-color:white;
     padding:20px;
     width:20em;
-    font-family: Roboto;
+    font-size:1.5em;
+    
 
 }
+
+@media only screen and (max-device-width: 600px) {
+    
+    button {
+        font-family:inherit;
+        margin:30px;
+        color:black;
+        background-color:white;
+        padding:20px; 
+        font-size:2.5em;
+        
+    }
+    h1{
+        font-size:4em;
+    }
+  }
