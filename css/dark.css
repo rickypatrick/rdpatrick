@@ -20,12 +20,13 @@ body {
     padding:0;
     
     
+    
 }
 #wrapper {
-    height:100%;
+   
     width:100%;
     background-color:black;
-    background-image: url("../images/dark-bg.jpg");
+   
     background-size:cover;
 }
 #wrapper::after {
@@ -42,6 +43,9 @@ body {
     z-index:1;
 }
 
+#whitelogo {
+    width:30%;
+}
 #blacklogo {
     display:none;
 }
@@ -64,6 +68,26 @@ body {
 h1 {
     color:#fff;
     font-size:3em;
+    text-transform: uppercase;
+}
+p,li {
+    color:#ffffff;
+    font-size:1.5em;
+}
+
+ul {
+    list-style-type :none;
+}
+
+li {
+    padding-top:.5em;
+}
+li a{
+    color:coral;
+}
+
+h1 a {
+    color:coral;
 }
 
 button {
