@@ -29,6 +29,14 @@ body {
    
     background-size:cover;
 }
+#side-projects {
+    border-style:solid;
+    border-color:rgb(87, 87, 87);
+    border-width:1px;
+    width:40%;
+    margin:auto;
+    padding:20px;
+}
 #wrapper::after {
     content: '';
     
@@ -76,11 +84,12 @@ p,li {
 }
 
 ul {
-    list-style-type :none;
+    list-style-type:circle;
 }
 
 li {
     padding-top:.5em;
+    text-align:left;
 }
 li a{
     color:coral;
